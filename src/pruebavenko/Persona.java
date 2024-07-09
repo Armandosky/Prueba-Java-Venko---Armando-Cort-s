@@ -1,11 +1,23 @@
+package pruebavenko;
+
 public class Persona {
-    public String primerNombre;
-    public String segundoNombre;
-    public String primerApellido;
-    public String segundoApellido;
-    public String tipoDocumento;
-    public int numeroDocumento;
-    public String fechaExpedicionDoc;
+    private String primerNombre;
+    private String segundoNombre;
+    private String primerApellido;
+    private String segundoApellido;
+    private String tipoDocumento;
+    private int numeroDocumento;
+    private String fechaExpedicionDoc;
+
+    public Persona(String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String tipoDocumento, int numeroDocumento, String fechaExpedicionDoc) {
+        this.primerNombre = primerNombre;
+        this.segundoNombre = segundoNombre;
+        this.primerApellido = primerApellido;
+        this.segundoApellido = segundoApellido;
+        this.tipoDocumento = tipoDocumento;
+        this.numeroDocumento = numeroDocumento;
+        this.fechaExpedicionDoc = fechaExpedicionDoc;
+    }
 
     public String getPrimerNombre() {
         return primerNombre;

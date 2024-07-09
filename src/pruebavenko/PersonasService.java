@@ -1,7 +1,17 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package pruebavenko;
+
+/**
+ *
+ * @author Armando
+ */
 import java.util.ArrayList;
 import java.util.List;
 
-public class PersonasService extends Persona{
+public class PersonasService{
     
     private final List<Paciente> pacientes = new ArrayList<>();
     
@@ -68,7 +78,6 @@ public class PersonasService extends Persona{
     }
 
 
-
     public boolean existeDocumento(int numeroDocumento){
         return pacientes.stream().anyMatch(p -> p.getNumeroDocumento() == (numeroDocumento)) ||
            medicos.stream().anyMatch(p -> p.getNumeroDocumento() == (numeroDocumento));
@@ -88,7 +97,7 @@ public class PersonasService extends Persona{
         return pacientes;
     }
 
-    public List<Paciente> getMedicos() {
+    public List<Medico> getMedicos() {
         return medicos;
     }
 

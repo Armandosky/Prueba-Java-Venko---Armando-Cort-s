@@ -1,10 +1,12 @@
-public class Medico extends Persona{
+package pruebavenko;
+
+public class Medico extends Persona {
     
     public Medico(String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String tipoDocumento, int numeroDocumento, String fechaExpedicionDoc) {
         super(primerNombre, segundoNombre, primerApellido, segundoApellido, tipoDocumento, numeroDocumento, fechaExpedicionDoc);
     }
 
-    @override
+    @Override
     public String toString() {
         return "Médico{" +
                 "tipoDocumento='" + getTipoDocumento() + '\'' +
@@ -16,5 +18,4 @@ public class Medico extends Persona{
                 ", fechaExpedicionDoc='" + getFechaExpedicionDoc() + '\'' +
                 '}';
     }
-    
 }
